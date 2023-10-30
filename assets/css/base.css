@@ -13,6 +13,10 @@
     --red-color: red;
     --search-history-color: #34224f;
     --border-primary-color: hsla(0,0%,100%,0.1);
+    --width-aside-pc: 240px;
+    --width-aside-table-mobile: 70px;
+    --height-aside-table-mobile: 70px;
+    --height-play-control: 90px; 
 }
 
 * {
@@ -36,6 +40,26 @@ html {
     from {
         opacity: 0;
     }
+}
+
+.l-4 {
+    width: 33.33333%;
+}
+
+.l-3 {
+    width: 25%;
+}
+
+.l-1-7 {
+    width: 14.285714285714%;
+}
+
+.l-1-5 {
+    width: 12.5%;
+}
+
+.l-2-4 {
+    width: 20%;
 }
 
 ::-webkit-scrollbar {
@@ -485,7 +509,64 @@ input[type=radio]:checked::before {
     opacity: 0.9;
 }
 
+.music__title {
+    font-size: 2.4rem;
+    padding-bottom: 6px;
+}
 
+.vertical-division {
+    height: 30px;
+    margin: 0 15px;
+    border-left: 1px solid var(--border-primary-color);
+}
+
+.container__empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-empty {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.bg-empty.album {
+    background-image: url('/Zing-mp3-clone/assets/img/empty__logo.png');
+}
+
+.bg-empty.upload {
+    background-image: url('/Zing-mp3-clone/assets/img/empty-upload-dark.png');
+}
+
+.text__empty {
+    font-size: 1.6rem;
+    color: hsla(0,0%,100%,0.5);
+    margin-top: 12px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.upload-btn {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 12px 24px 10px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    margin-top: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    filter: brightness(0.9) ;
+}
 
 
 

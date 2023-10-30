@@ -7,8 +7,8 @@
     <link rel="icon" href="https://smartnew.vn/wp-content/uploads/2019/05/zing-mp3.png" type="image/x-icon" />
     <link rel="stylesheet" href="/Zing-mp3-clone/assets/css/base.css">
     <link rel="stylesheet" href="/Zing-mp3-clone/assets/css/main.css">
-    <link rel="stylesheet" href="/Zing-mp3-clone/assets/css/zingchart.css">
     <link rel="stylesheet" href="/Zing-mp3-clone/assets/css/mymusic.css">
+    <link rel="stylesheet" href="/Zing-mp3-clone/assets/css/playlist.css">
     <link rel="stylesheet" href="/Zing-mp3-clone/assets/css/responsive.css">
     <link rel="stylesheet" href="/Zing-mp3-clone/assets/fonts/fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
@@ -100,6 +100,7 @@
                 </button>
             </div>
         </aside>
+
         <div id="container-primary">
             <nav class="container__nav">
                 <div class="nav__left">
@@ -480,448 +481,44 @@
                 </div>
             </nav>
 
-            <div class="container__page-home mymusic">
-                <div class="container__header">  
-                    <h3 class="title-text">Thư viện</h3>
-                    <button class="play-btn">
-                        <i class="fa-solid fa-circle-play"></i>
-                    </button>
+            <div class="container__page-home playlist">
+                <div class="mymusic__header">
+                    <h3 class="music__title">Playlist</h3>
+                    <div class="vertical-division"></div>
+                    <div class="mymusic__header-option">
+                        <a href="" class="mymusic__header-link mymusic__header-link--active">TẤT CẢ</a>
+                        <a href="" class="mymusic__header-link">CỦA TÔI</a>
+                    </div>
                 </div>
-                <div class="container__mymusic">
-                    <div class="mymusic__header">
-                        <div class="mymusic__header-option">
-                            <a href="" class="mymusic__header-link mymusic__header-link--active">BÀI HÁT</a>
-                            <a href="" class="mymusic__header-link">ALBUM</a>
-                            <a href="" class="mymusic__header-link">MV</a>
+
+                <div class="container__playlist">
+                    <div class="playlist__item l-2-4">
+                        <div class="playlist__info">
+                            <i class="fa-light fa-circle-plus"></i>
+                            <p class="text-create-playlist">Tạo playlist mới</p>
                         </div>
                     </div>
-                    <div class="mymusic__option">
-                        <a href="" class="mymusic__option-item mymusic__option-item--active">Yêu thích</a>
-                        <a href="" class="mymusic__option-item">Đã tải lên</a>
-                    </div>
-                    <div class="mymusic__list">
-                        <div class="mymusic__title-list">
-                            <div class="zingchart-item__left" style="padding-left: 25px;">
-                                <span class="mymusic__title">Bài hát</span>
-                            </div>
-                            <div class="zingchart-item__content">
-                                <span class="mymusic__title">Album</span>
-                            </div>
-                            <div class="zingchart-item__right">
-                                <span class="mymusic__title">Thời gian</span>
-                            </div>
+                    <div class="playlist__item l-2-4">
+                        <div class="playlist__info">
+                            <i class="fa-light fa-circle-plus"></i>
+                            <p class="text-create-playlist">Tạo playlist mới</p>
                         </div>
-                        <div class="container__zingchart-list">
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="container__zingchart-item mymusic">
-                                <div class="zingchart-item__left mymusic">
-                                    <input type="checkbox" name="" id="" class="checkbox">
-                                    <i class="icon-music fa-light fa-music"></i>
-                                    <figure>
-                                        <img src="/Zing-mp3-clone/assets/img/zing-chart/1.jpg" alt="" class="song-thumb">
-                                        <div class="music__btn-play">
-                                            <i class="fa-solid fa-play"></i>
-                                        </div>
-                                    </figure>
-                                    <div class="container-music__info">
-                                        <h4 class="info__name-music">Cơn Mưa Rào</h4>
-                                        <span class="info__name-single-list">
-                                            <a href="" class="info__name-single">Văn Mai Hương</a>
-                                            <a href="" class="info__name-single">Negav</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="zingchart-item__content">
-                                    <span class="content__name-song">Cơn Mưa Rào (Single)</span>
-                                </div>
-                                <div class="zingchart-item__right">
-                                    <span class="right__time-song">03:45</span>
-                                </div>
-                                <div class="container__music-option">
-                                    <div class="container__option-list zing-chart suggestion">
-                                        <div class="music-option__microphone">
-                                            <i class="music-option-icon-microphone fa-light fa-microphone-stand"></i>
-                                            <span class="text-hover microphone-hover">Phát cùng lời bài hát</span>
-                                        </div>
-                                        <div class="music-option__heart mymusic">
-                                            <i class="music-option-icon-heart fa-solid fa-heart"></i>
-                                            <span class="text-hover heart-hover mymusic">Xóa khỏi thư viện</span>
-                                        </div>
-                                        <div class="music-option__ellipsis">
-                                            <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
-                                            <span class="text-hover ellipsis-hover zing-chart">Khác</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
+                    </div>
+                    <div class="playlist__item l-2-4">
+                        <div class="playlist__info">
+                            <i class="fa-light fa-circle-plus"></i>
+                            <p class="text-create-playlist">Tạo playlist mới</p>
+                        </div>
+                    </div><div class="playlist__item l-2-4">
+                        <div class="playlist__info">
+                            <i class="fa-light fa-circle-plus"></i>
+                            <p class="text-create-playlist">Tạo playlist mới</p>
+                        </div>
+                    </div>
+                    <div class="playlist__item l-2-4">
+                        <div class="playlist__info">
+                            <i class="fa-light fa-circle-plus"></i>
+                            <p class="text-create-playlist">Tạo playlist mới</p>
                         </div>
                     </div>
                 </div>
