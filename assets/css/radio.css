@@ -1,0 +1,121 @@
+.container__page-home.radio {
+    margin: 110px 0 90px 0;
+}
+
+.container__radio {
+    padding-bottom: 6px;
+}
+
+.radio__channel {
+    margin: 48px 0 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.channel-left__title {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    margin-left: 12px;
+}
+
+.channel-left__body {
+    background-color: hsla(0,0%,100%,0.1);
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+}
+
+.body__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 80px;
+}
+
+.body__card:first-child {
+    margin-bottom: 8px;
+}
+
+.body__card figure { 
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.body__card-img {
+    width: 100%;
+    height: auto;
+}
+
+.body__card figure:hover i {
+    display: block;
+}
+
+.body__card figure:hover .body__card-img {
+    filter: brightness(50%);
+}
+
+.body__card figure i {
+    position: absolute;
+    font-size: 4.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.radio__channel-right {
+    margin-top: 46px;
+    flex: 1;
+    position: relative;
+}
+
+.container__program {
+    background-color: hsla(0,0%,100%,0.1);
+    padding: 8px;
+    margin: 0 0 8px 8px;
+    display: flex;
+}
+
+.container__program figure {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.program__img {
+    width: 100%;
+    height: auto;
+}
+
+.program__name {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.program__name:hover {
+    color: var(--primary-color);
+}
+
+.program__time {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsla(0,0%,100%,0.5);
+}
+
+.link__arrow-banner.radio {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 48%;
+    right: 18px;
+    transform: translatey(-50%);
+    display: block;
+}

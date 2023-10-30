@@ -1,0 +1,268 @@
+.container__page-home.zingchart {
+    margin: 110px 0 90px 0;
+}
+.container__zingchart {
+    padding-bottom: 30px;
+}
+
+.title-text.zing-chart {
+    background: radial-gradient(50% 124.93% at 95.86% -10%,#3efad9 0,hsla(0,0%,100%,0) 100%),linear-gradient(91.56deg,#ff9357 1.54%,#9100ff 98.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container__zingchart-list {
+    margin-bottom: 20px;
+}
+
+.container__zingchart-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    user-select: none;
+    border-bottom: 1px solid hsla(0,0%,100%,0.05);
+}
+
+.container__zingchart-item:hover {
+    background-color: hsla(0,0%,100%,0.1);
+    border-radius: 4px;
+}
+
+.container__option-list.zing-chart {
+    left: 93%;
+}
+
+.zingchart-item__left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.text-suggest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 45px 0 17px;
+    font-size: 1.4rem;
+    color: hsla(0,0%,100%,0.5);
+}
+
+.top-zingchart {
+    width: 60px;
+    min-width: 38px;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgba(74,144,226,0);
+    -webkit-text-stroke: 1.5px var(--white-color);
+}
+
+.top-1 {
+    -webkit-text-stroke: 1px #4a90e2;
+}
+
+.top-2 {
+    -webkit-text-stroke: 1px #50e3c2;
+}
+
+.top-3 {
+    -webkit-text-stroke: 1px #e35050;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    margin: 0 15px 0 7px;
+}
+
+.dash.weekly-rankings {
+    margin: 0 12px 0 -5px;
+}
+
+.dash i {
+    font-size: 1.6rem;
+    color: hsla(0,0%,100%,0.5);
+}
+
+.zingchart-item__left figure {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container__zingchart-item:hover .song-thumb {
+    filter: brightness(60%);
+}
+
+.song-thumb {
+    border-radius: 4px;
+    width: 100%;
+}      
+
+.container-music__info.weekly-rankings {
+    width: 50%;
+}
+
+.zingchart-item__content {
+    width: 40%;
+}
+
+.content__name-song,
+.right__time-song {
+    font-size: 1.4rem;
+    color: hsla(0,0%,100%,0.5);
+    cursor: pointer;
+}
+
+.content__name-song:hover {
+    text-decoration: underline;
+    color: var( --primary-color);
+}
+
+.container__zingchart-item:hover .zingchart-item__right {
+    display: none;
+}
+
+.zingchart-item__right {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+}
+
+.see-all-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.see-all-btn button {
+    font-size: 1.4rem;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: var(--white-color);
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.see-all-btn button:hover {
+    background-color: hsla(0,0%,100%,0.1);
+}
+
+.container__weekly-rankings {
+    position: relative;
+    padding-top: 40px;
+}
+
+.bg-blur {
+    position: absolute;
+    inset: 0;
+    background: url('/Zing-mp3-clone/assets/img/zing-chart/slider.jpg') top/cover no-repeat;
+    margin: 0 -59px;
+    z-index: 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.bg-alpha {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(32,19,53,0.9);
+    margin: 0 -59px;
+    z-index: 0;
+}
+
+.weekly-rankings__title {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.weekly-rankings__title-link {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.weekly-rankings__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 -14px 0 -14px;
+}
+
+.weekly-rankings__col {
+    padding: 0 14px;
+    margin-bottom: 30px;
+}
+
+.weekly-rankings__item {
+    padding: 20px 10px;
+    border-radius: 16px;
+    background-color: hsla(0,0%,100%,0.05);;
+}
+
+.weekly-rankings__header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 40px;
+}
+
+.weekly-rankings__header-link {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.weekly-rankings__header-link:hover {
+    color: var(--link-text-hover);
+}
+
+.container__zingchart-list.weekly-rankings {
+    margin-bottom: 12px;
+}
+
+.play-btn.weekly-rankings {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.container__zingchart-item.weekly-rankings {
+    border: none;
+}
+
+.zingchart-item__left.weekly-rankings {
+    width: 80%;
+}
+
+.zingchart-item__right.weekly-rankings {
+    width: 20%;
+}
+
+.container__option-list.weekly-rankings {
+    left: 85%;
+}
+
+/* .container__zingchart-item:hover .zingchart-item__left.weekly-rankings {
+    width: 70%;
+}
+
+.container__zingchart-item:hover .zingchart-item__right.weekly-rankings {
+    width: 30%;
+} */
+
+/* .container__zingchart-item:hover .info__name-single-list.weekly-rankings {
+    display: none;
+} */
+
+
+
+
+

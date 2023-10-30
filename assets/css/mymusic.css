@@ -1,0 +1,106 @@
+.container__page-home.mymusic {
+    margin: 110px 0 90px 0;
+}
+
+.container__mymusic {
+    padding-bottom: 6px;
+}
+
+.container__mymusic-list {
+    margin: 48px 0 90px 0;
+}
+
+.mymusic__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid hsla(0,0%,100%,0.1);
+    margin-bottom: 26px;
+}
+
+.mymusic__header-link {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    padding: 15px 0;
+    margin-right: 40px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.mymusic__header-link:not(:first-child):hover {
+    color: var(--primary-color);
+}
+
+.mymusic__header-link--active {
+    border-bottom: 2px solid #9b4de0;
+}
+
+.mymusic__option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mymusic__option-item {
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--white-color);
+    text-transform: uppercase;
+    margin-right: 16px;
+    user-select: none;
+}
+
+.mymusic__option-item:last-child:hover {
+    color: #c273ed;
+    border-color: #c273ed;
+}
+
+.mymusic__option-item--active {
+    background-color: #9b4de0;
+    border-color: #9b4de0;
+}
+
+.mymusic__title-list {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    padding: 10px;
+    user-select: none;
+    border-bottom: 1px solid hsla(0,0%,100%,0.05);
+}
+
+.mymusic__title {
+    font-size: 1.2rem;
+    color: hsla(0,0%,100%,0.5);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.container__zingchart-item.mymusic:hover input[type=checkbox] {
+    display: block;
+}
+
+.container__zingchart-item.mymusic:hover .icon-music {
+    display: none;
+}
+
+.zingchart-item__left.mymusic i {
+    font-size: 1.36rem;
+    color: hsla(0,0%,100%,0.5);
+    margin-right: 12px;
+}
+
+.music-option__heart.mymusic {
+    color: #9b4de0;
+}
+
+.text-hover.heart-hover.mymusic {
+    top: -94%;
+    left: 17px;
+}
+
+
