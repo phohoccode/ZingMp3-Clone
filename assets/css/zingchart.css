@@ -192,6 +192,7 @@
 .weekly-rankings__list {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 -14px 0 -14px;
 }
@@ -249,18 +250,6 @@
 .container__option-list.weekly-rankings {
     left: 85%;
 }
-
-/* .container__zingchart-item:hover .zingchart-item__left.weekly-rankings {
-    width: 70%;
-}
-
-.container__zingchart-item:hover .zingchart-item__right.weekly-rankings {
-    width: 30%;
-} */
-
-/* .container__zingchart-item:hover .info__name-single-list.weekly-rankings {
-    display: none;
-} */
 
 
 

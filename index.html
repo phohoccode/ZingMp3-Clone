@@ -481,21 +481,27 @@
 
             <div class="container__page-home">
                 <div class="container__card-banner-list">
-                    <a href="" class="container__card-link l-4 m-6">
-                        <img src="/Zing-mp3-clone/assets/img/banner/banner-1.jpg" alt="" class="container__card-img">
-                        <button href="" class="link__arrow-banner left">
-                            <i class="fa-light fa-chevron-left"></i>
-                        </button>
-                    </a>
-                    <a href="" class="container__card-link l-4 m-6">
-                        <img src="/Zing-mp3-clone/assets/img/banner/banner-2.jpg" alt="" class="container__card-img">
-                    </a>
-                    <a href="" class="container__card-link hide-on-table-mobile  l-4 m-6">
-                        <img src="/Zing-mp3-clone/assets/img/banner/banner-3.jpg" alt="" class="container__card-img">
-                        <button href="" class="link__arrow-banner right">
-                            <i class="fa-light fa-chevron-right"></i>
-                        </button>
-                    </a>
+                    <div class="m-6 l-4">
+                        <a href="" class="container__card-link">
+                            <img src="/Zing-mp3-clone/assets/img/banner/banner-1.jpg" alt="" class="container__card-img">
+                            <button href="" class="link__arrow-banner left">
+                                <i class="fa-light fa-chevron-left"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="m-6 l-4">
+                        <a href="" class="container__card-link">
+                            <img src="/Zing-mp3-clone/assets/img/banner/banner-2.jpg" alt="" class="container__card-img">
+                        </a>
+                    </div>
+                    <div class="m-6 l-4">
+                        <a href="" class="container__card-link">
+                            <img src="/Zing-mp3-clone/assets/img/banner/banner-3.jpg" alt="" class="container__card-img">
+                            <button href="" class="link__arrow-banner right">
+                                <i class="fa-light fa-chevron-right"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Gần đây -->
@@ -1006,7 +1012,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container__music-list-col l-4 m-6 hide-on-table-mobile">
+                        <div class="container__music-list-col l-4 m-6">
                             <div class="music-list-col__item">
                                 <a href="">
                                     <img src="/Zing-mp3-clone/assets/img/avatar-3-9.jpg" alt="" class="music-list-item__img">
@@ -2443,7 +2449,7 @@
                             <h3 class="card-avatar__name">Bolero</h3>
                             <h4 class="card-avatar__description">77 đang nghe</h4>
                         </div>
-                        <div class="card-avatar__item l-1-7 m-2-4 hide-on-table-mobile ">
+                        <div class="card-avatar__item l-1-7 m-2-4">
                             <div class="card-content-live">
                                 <div class="card-avatar__link card-avatar__item--active">
                                     <figure>
@@ -2463,7 +2469,7 @@
                             <h3 class="card-avatar__name">US-UK</h3>
                             <h4 class="card-avatar__description">1011 đang nghe</h4>
                         </div>
-                        <div class="card-avatar__item l-1-7 m-2-4 hide-on-table-mobile ">
+                        <div class="card-avatar__item l-1-7 m-2-4">
                             <div class="card-content-live">
                                 <div class="card-avatar__link card-avatar__item--active">
                                     <figure>
@@ -2496,56 +2502,89 @@
                 <div class="container__music-partner">
                     <h3 class="music-partner__title">Đối tác âm nhạc</h3>
                     <div class="container__partner-list">
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/1.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/2.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/3.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/4.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/5.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/6.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/7.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/8.png" alt="" class="partner__img">
-                        </figure>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/1.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/2.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/3.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/4.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/5.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/6.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/7.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/8.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/9.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/10.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/11.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/12.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/13.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/14.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/15.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
+                        <div class="col-partner l-1-5 m-3">
+                            <figure class="partner__item">
+                                <img src="/Zing-mp3-clone/assets/img/music-partner/16.png" alt="" class="partner__img">
+                            </figure>
+                        </div>
                     </div>
                     <div class="container__partner-list">
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/9.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/10.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/11.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/12.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/13.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/14.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/15.png" alt="" class="partner__img">
-                        </figure>
-                        <figure class="partner__item l-1-5 m-3">
-                            <img src="/Zing-mp3-clone/assets/img/music-partner/16.png" alt="" class="partner__img">
-                        </figure>
+                        
                     </div>
                 </div>
             </div>
@@ -2566,7 +2605,7 @@
                         <i class="music-option-icon-heart fa-light fa-heart"></i>
                         <span class="text-hover heart-hover history">Thêm vào thư viện</span>
                     </div>
-                    <div class="music-option__ellipsis">
+                    <div class="music-option__ellipsis hide-on-table-mobile">
                         <i class="music-option-icon-ellipsis fa-light fa-ellipsis"></i>
                         <span class="text-hover ellipsis-hover history">Khác</span>
                     </div>

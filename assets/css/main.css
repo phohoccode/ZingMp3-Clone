@@ -38,7 +38,7 @@ aside {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 16px 21px;
+    padding: 12px 21px;
     font-size: 1.5rem;
     color: #ddd;
     text-decoration: none;
@@ -173,9 +173,12 @@ aside {
     top: 0;
     left: 240px;
     right: 0;
-    padding: 0 59px;
+    padding: 0 var(--padding-page-pc);
     z-index: 999;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     background-color: rgba(23,15,35,0.95);
+    box-shadow: 0 3px 5px hsla(0,0,0,0.1);
 }
 
 .nav__left {
@@ -202,6 +205,7 @@ aside {
 
 .nav__search-input {
     width: 100%;
+    height: 40px;
     font-size: 1.6rem;
     padding: 12px 40px;
     border: none;
@@ -219,7 +223,7 @@ aside {
 
 .nav__icon-search {
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 2%;
     font-size: 2.4rem;
     color: var(--white-color);
@@ -359,13 +363,15 @@ aside {
 }
 
 .nav__download {
+    width: 190px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--link-text-hover);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding: 10px 24px;
+    padding: 10px 20px;
     border-radius: 20px;
     margin-right: 12px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -384,7 +390,6 @@ aside {
 .nav__setting-container {
     position: relative;
 }
-
 
 .nav__setting {
     width: 40px;
@@ -889,7 +894,7 @@ aside {
 }
 
 .container__page-home {
-    padding: 0 59px;
+    padding: 0 var(--padding-page-pc);
 }
 
 .container__card-banner-list {
@@ -1312,15 +1317,19 @@ aside {
 
 .container__partner-list {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -14px;
     margin-right: -14px;
 }
 
+.col-partner {
+    padding: 0 12px;
+    margin-bottom: 30px;
+}
+
 .partner__item {
-    margin: 0 14px;
     padding: 10px;
     border-radius: 8px;
-    margin-bottom: 30px;
     background-color: #f7f7f7;
 }
 

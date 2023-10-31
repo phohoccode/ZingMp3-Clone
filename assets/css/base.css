@@ -2,6 +2,7 @@
     --height-sidebar: 100%;
     --scroll-thumb-bg: hsla(0,0%,100%,0.3);
     --sidebar-color: #221a2d;
+    --sidebar-table-mobile: #2a213a;
     --sidebar-active-color: #393142;
     --main-content-color: #170f23;
     --primary-color: #9b4de0;
@@ -17,6 +18,8 @@
     --width-aside-table-mobile: 70px;
     --height-aside-table-mobile: 70px;
     --height-play-control: 90px; 
+    --padding-page-pc: 59px;
+    --padding-page-table-mobile: 29px;
 }
 
 * {
@@ -64,14 +67,18 @@ html {
 
 ::-webkit-scrollbar {
     width: 4px;
-    display: none;
+    height: 0;
 }
 
-::-webkit-scrollbar-thumb {
-    height: 89px;
-    border-radius: 4px;
-    background-color: var(--scroll-thumb-bg);
+::-webkit-scrollbar-track {
+    background: var(--main-content-color); 
 }
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: var(--scroll-thumb-bg); 
+}
+
 
 /* input range */
 input[type="range"] {
@@ -210,6 +217,10 @@ input[type=radio]:checked::before {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.link__arrow-radio {
+    top: 45%;
 }
 
 .link__arrow-banner:hover,

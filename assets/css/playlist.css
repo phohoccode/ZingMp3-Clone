@@ -12,6 +12,7 @@
 
 .playlist__item {
     margin: 0 14px;
+    width: 190px;
     height: 260px;
     border-radius: 4px;
     display: flex;
