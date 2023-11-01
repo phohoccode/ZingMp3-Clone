@@ -21,7 +21,7 @@
     .hide-on-table-mobile {
         display: none;
     }
-    aside {
+    .sidebar-pc {
         background-color: var( --sidebar-table-mobile);
         width: var(--width-aside-table-mobile);
     }
@@ -80,9 +80,12 @@
     .card-avatar__list,
     .container__music-list,
     .container__charts-list,
-    .container__topic-list {
+    .container__topic-list,
+    .container__card-zingchart-list {
         overflow-x: auto;
         flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
     }
     .link__arrow-charts {
         display: none;
@@ -145,5 +148,171 @@
 } 
 
 @media (max-width: 739px) {
-
+    .hide-on-mobile {
+        display: none;
+    }
+    .c-3-6 {
+        min-width: 30.303030%;
+        flex-shrink: 0;
+    }
+    .c-5-5 {
+        min-width: 45.66667%;
+        flex-shrink: 0;
+    }
+    .c-9-8 {
+        min-width: 81.66667%;
+        flex-shrink: 0;
+    }
+    .c-12 {
+        min-width: 100%;
+        flex-shrink: 0;
+    }
+    .sidebar-pc {
+        display: none;
+    }
+    .sidebar-mobile {
+        display: block;
+    }
+    .container__header-mobile {
+        display: flex;
+    }
+    #container-primary {
+        width: 100%;
+        left: 0;
+    }
+    .container__nav {
+        display: none;
+    }
+    .container__page-home {
+        padding: 0 var(--padding-page-mobile) 150px var(--padding-page-mobile);
+    }
+    .zing-chart-mobile {
+        display: block;
+    }
+    .container__card-section.mobile {
+        display: block;
+    }
+    .view-all__btn {
+        display: none;
+    }
+    .topic__title {
+        font-size: 1.6rem;
+    }
+    .header__title i {
+        display: block;
+    }
+    .card-avatar__name {
+        margin-top: 10px;
+    }
+    .card-avatar__item {
+        margin-bottom: 12px;
+    }
+    .container__name-single-list {
+        margin-top: 4px;
+    }
+    .container__card-banner-list,
+    .card-avatar__list,
+    .container__charts-list,
+    .container__topic-list {
+        margin: 0 -8px 0 -8px;
+    }
+    .card-content-live:hover .container__music-option {
+        display: none;
+    }
+    .container__card-zingchart-list {
+        display: none;
+    }
+    .container__card-link,
+    .card-avatar__item,
+    .container__music-list-col,
+    .container__charts-item,
+    .topic__col {
+        padding: 0 8px;
+        scroll-snap-align: start;
+    }
+    .container__charts-item {
+        margin-bottom: 10px;
+    }
+    .select-region-btn {
+        font-size: 1rem;
+        padding: 6px 16px;
+        margin-right: 8px;
+    }
+    .container__music-list {
+        margin: 0 -32px 0 -32px;
+    }
+    .music-list-col__item {
+        padding: 10px 24px;
+    }
+    .music-list-col__item:hover .music__btn-play {
+        display: none;
+    }
+    .music-option__more {
+        display: block;
+    }
+    .music-option__more:hover .text-hover.more-hover {
+        display: none;
+    }
+    .card-content:hover .container__music-option {
+        display: none;
+    }
+    .card-avatar__img-live {
+        display: none;
+    }
+    .header__btn-show-all {
+        display: none;
+    }
+    .link__arrow-radio {
+        display: none;
+    }
+    .container__music-partner {
+        display: none;
+    }
+    #container__play-control {
+        padding: 0 var(--padding-page-mobile);
+        height: var(--height-sidebar-mobile);
+        bottom: calc(var(--height-sidebar-mobile) + 0.5px);
+    }
+    .play-control__left {
+        width: 70%;
+    }
+    .play-control__left figure {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .play-control__option:hover .text-hover.heart-hover  {
+        display: none;
+    }
+    .play-control__center {
+        width: 30%;
+    }
+    .play-control__center-top-item .pc {
+        display: none;
+    }
+    .play-control__center-top {
+        margin: 0;
+    }
+    .play-control__center-top-item {
+        font-size: 2.2rem;
+    }
+    .play-control__center-top-item:hover {
+        background-color: transparent;
+    }
+    .play-control__center-top-item:hover .text-hover.top-item {
+        display: none;
+    }
+    .play-control__center-bottom {
+        display: none;
+    }
+    .play-control__center-top-item .mobile {
+        display: block;
+        font-size: 2.2rem;
+    }
+    .play-control__center-top-item.mobile {
+        display: flex;
+    }
+    .play-control__right {
+        display: none;
+    }
 }

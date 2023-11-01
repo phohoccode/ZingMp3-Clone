@@ -20,6 +20,9 @@
     --height-play-control: 90px; 
     --padding-page-pc: 59px;
     --padding-page-table-mobile: 29px;
+    --padding-page-mobile: 16px;
+    --height-header-mobile: 50px;
+    --height-sidebar-mobile: 60px;
 }
 
 * {
@@ -326,7 +329,6 @@ input[type=radio]:checked::before {
 .music-option__ellipsis-hover.history {
     top: -97%;
 }
-
 
 .music-option-icon-heart,
 .music-option-icon-ellipsis,

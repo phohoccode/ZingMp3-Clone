@@ -1,4 +1,4 @@
-aside {
+.sidebar-pc {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,6 +6,169 @@ aside {
     height: calc(100% - 90px);
     background-color: var(--sidebar-color);
     z-index: 999;
+}
+
+.sidebar-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--sidebar-color);
+    display: none;
+    border-top: 0.5px solid var(--border-primary-color);
+}
+
+.sidebar-list-mobile {
+    display: flex;
+}
+
+.sidebar-item-mobile {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    padding: 8px;
+    color: var(--white-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar-item-mobile--active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.sidebar-item-mobile > svg {
+    font-size: 2rem;
+}
+
+.item__name-mobile {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.container__header-mobile {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 12px;
+    height: var(--height-header-mobile);
+}
+
+.title-mobile {
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.option-mobile__item {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+}
+
+.option-mobile__item:first-child {
+    margin-right: 8px;
+}
+
+.option-mobile__item:hover {
+    background-color: hsla(0,0%,100%,0.1);
+}
+
+.container__card-section.mobile {
+    display: none;
+}
+
+/* zingchart mobile */
+.zing-chart-mobile {
+    display: none;
+    border-radius: 4px;
+    background-color: var(--primary-bg);
+    padding: 10px;
+    margin: 12px 0 24px 0;
+}
+
+.zing-chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.zing-chart__title {
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    background: radial-gradient(50% 124.93% at 95.86% -10%,#3efad9 0,hsla(0,0%,100%,0) 100%),linear-gradient(91.56deg,#ff9357 1.54%,#9100ff 98.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.zing-chart__time {
+    font-size: 1.4rem;
+    margin-right: 4px;
+}
+
+.zing-chart__play-btn {
+    font-size: 1.4rem;
+    border: none;
+    color: var(--white-color);
+    background-color: transparent;
+}
+
+.container-zingchart-list.mobile {
+    margin: 0 -10px 0 -10px;
+}
+
+.container__zingchart-item.mobile {
+    border: none;
+    
+}
+
+.zingchart-item__left.mobile {
+    width: 90%;
+}
+
+.zingchart-item__left.mobile figure {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.zing-chart__top {
+    font-size: 1.6rem;
+    margin: 0 15px;
+}
+
+.container-music__info.mobile {
+    margin: 0;
+}
+
+.container__zingchart-item:hover .zingchart-item__right.mobile {
+    display: flex;
+}
+
+.ellipsis-btn {
+    border: none;
+    font-size: 2rem;
+    z-index: 1;
+    color: var(--white-color);
+    background-color: transparent;
+}
+
+.see-all-btn.mobile {
+    text-decoration: none;
+}
+
+.see-all-btn > .mobile {
+    margin: 12px 0;
+    font-size: 1.2rem;
+    padding: 4px 12px;
 }
 
 .logo {
@@ -31,7 +194,7 @@ aside {
 
 .sidebar-list:last-child {
     overflow: hidden scroll;
-    max-height: 280px;
+    max-height: 320px;
 }
 
 .sidebar-item {
@@ -953,7 +1116,15 @@ aside {
 }
 
 .header__title {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
+}
+
+.header__title i {
+    display: none;
+    font-size: 1.8rem;
+    margin: 2px 0 0 6px;
 }
 
 .header__btn-show-all {
@@ -1513,6 +1684,14 @@ aside {
     margin: 0 10px 0 25px;
     padding: 0;
     background-color: hsla(0,0%,100%,0.1);
+}
+
+.play-control__center-top-item .mobile {
+    display: none;
+}
+
+.play-control__center-top-item.mobile {
+    display: none;
 }
 
 
