@@ -111,4 +111,163 @@
     left: 17px;
 }
 
+/* Mobile */
+.container__option-mymusic-list {
+    display: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    margin: 32px -8px 32px -8px;
+}
+
+.option__mymusic-item.mobile {
+    padding: 0 8px;
+    scroll-snap-align: start;
+}
+.option__mymusic-link.mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: var(--white-color);
+}
+.option__mymusic-link.mobile > i {
+    font-size: 3rem;
+    color: var(--black-color);
+    margin-bottom: 24px;
+}
+.option__mymusic-link.mobile > .heart {
+    color: rgb(73, 196, 227);
+}
+.option__mymusic-link.mobile > .down {
+    color: rgb(163, 19, 185);
+}
+.option__mymusic-link.mobile > .user {
+    color: rgb(197, 121, 46);
+}
+.option__mymusic-link.mobile > .upload {
+    color: rgb(235, 97, 38);
+}
+.option__mymusic-link.mobile > .mv {
+    color: rgb(73, 196, 227);
+}
+.option__mymusic-name.mobile {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--black-color);
+    margin-bottom: 6px;
+}
+.option__mymusic-quantity.mobile {
+    font-size: 1.4rem;
+    color: var(--black-color);
+}
+.container__mymusic-mobile {
+    margin: 24px 0;
+    display: none;
+}
+.container__card-section.mymusic {
+    display: none;
+}
+.mymusic__header-mobile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.mymusic__title-mobile {
+    font-size: 2rem;
+    color: #ddd;
+    text-decoration: none;
+    margin-right: 24px;
+    position: relative;
+}
+.mymusic__title-mobile--active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.mymusic__title-mobile--active::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+}
+.mymusic__create {
+    display: flex;
+    align-items: center;
+}
+.create_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 12px;
+}
+.create_btn > i {
+    font-size: 2.4rem;
+}
+.create__name {
+    font-size: 1.4rem;
+}
+.mymusic__description-mobile {
+    display: block;
+    font-size: 1.4rem;
+    color: #ddd;
+    margin: 8px 0 12px 0;
+}
+.container__playlist-list-mobile {
+    margin-bottom: 110px;
+    margin: 0 -20px 0 -20px;
+}
+.playlist-item-mobile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.playlist-item-mobile:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.playlist-item__left {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+.playlist-item__left > figure {
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    margin: 0 12px 0 10px;
+}
+.playlist-img-mobile {
+    width: 100%;
+    height: auto;
+}
+.info-mobile__name {
+    font-size: 1.5rem;
+}
+.info-mobile__subtitle {
+    display: block;
+    font-size: 1.4rem;
+    color: #ddd;
+    margin-top: 4px;
+}
+.playlist-item__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.playlist-item__right > i {
+    font-size: 2rem;
+}
+
 

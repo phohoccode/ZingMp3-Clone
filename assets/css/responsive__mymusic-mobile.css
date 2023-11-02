@@ -1,0 +1,26 @@
+@media (max-width: 739px) {
+    .container__page-home.mobile {
+        margin: 0 ;
+        height: 100%;
+        padding-bottom: 120px;
+    }
+    .container__header {
+        display: none;
+    }
+    .mymusic__option {
+        display: none;
+    }
+    .container__mymusic {
+        display: none;
+    }
+    .container__option-mymusic-list {
+        display: flex;
+    }
+    .container__card-section.mymusic {
+        display: block;
+    }
+    .container__mymusic-mobile {
+        display: block;
+    }
+   
+}
