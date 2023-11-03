@@ -251,6 +251,58 @@
     left: 85%;
 }
 
+/* weekly-ranking mobile */
+.zing-chart-mobile {
+    margin: 32px -16px 0 -16px;
+}
+
+.weekly-ranking-mobile {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 12px -16px;
+    padding: 24px 16px;
+}
+
+.weekly-ranking__title-mobile {
+    font-size: 2rem;
+}
+
+.weekly-rannking__item-mobile {
+    display: flex;
+    margin: 20px 0;
+    padding: 16px;
+    border-radius: 12px;
+    background: url('/Zing-mp3-clone/assets/img/zing-chart/slider.jpg') center/cover no-repeat;
+    background-size: 4000%;
+}
+
+.weekly-rannking__item-mobile:last-child {
+    margin-bottom: 0;
+}
+
+.weekly-rannking__item-mobile figure {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.weekly-ranking__img-mobile {
+    width: 100%;
+    height: auto;
+}
+
+.weekly-ranking__name-nation {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.weekly-ranking__name-song {
+    display: block;
+    font-size: 1.4rem;
+    margin: 4px 0;
+}
 
 
 

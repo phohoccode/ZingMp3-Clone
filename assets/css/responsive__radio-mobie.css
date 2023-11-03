@@ -1,0 +1,14 @@
+@media (max-width: 739px) {
+    .container__page-home.radio {
+        margin: 0;
+    }
+    .container__header {
+        display: none;
+    }
+    .radio-mobile {
+        margin-top: 32px;
+    }
+    .radio__channel {
+        display: none;
+    }
+}

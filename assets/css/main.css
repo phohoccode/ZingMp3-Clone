@@ -40,8 +40,10 @@
     font-weight: 600;
 }
 
-.sidebar-item-mobile > svg {
+.sidebar-item-mobile > svg,
+.sidebar-item-mobile > i {
     font-size: 2rem;
+    margin-bottom: 3px;
 }
 
 .item__name-mobile {
@@ -89,8 +91,8 @@
 .zing-chart-mobile {
     display: none;
     border-radius: 4px;
-    background-color: var(--primary-bg);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 16px;
     margin: 12px 0 24px 0;
 }
 
@@ -128,7 +130,6 @@
 
 .container__zingchart-item.mobile {
     border: none;
-    
 }
 
 .zingchart-item__left.mobile {
@@ -141,8 +142,12 @@
 }
 
 .zing-chart__top {
-    font-size: 1.6rem;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 0 6px 11px 6px;
+    font-size: 1.4rem;
 }
 
 .container-music__info.mobile {
@@ -165,10 +170,17 @@
     text-decoration: none;
 }
 
-.see-all-btn > .mobile {
+.see-all-btn.mobile button {
+    display: flex;
+    align-items: center;
     margin: 12px 0;
     font-size: 1.2rem;
     padding: 4px 12px;
+}
+
+.see-all-btn.mobile button i {
+    font-size: 1.4rem;
+    margin-left: 4px;
 }
 
 .logo {
@@ -1692,6 +1704,10 @@
 
 .play-control__center-top-item.mobile {
     display: none;
+}
+
+.heart-mobile {
+    font-size: 2.2rem;
 }
 
 
