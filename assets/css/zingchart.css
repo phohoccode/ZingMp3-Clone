@@ -299,7 +299,10 @@
 }
 
 .weekly-ranking__name-song {
-    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: 1.4rem;
     margin: 4px 0;
 }

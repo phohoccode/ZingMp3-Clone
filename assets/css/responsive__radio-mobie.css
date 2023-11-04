@@ -5,6 +5,16 @@
     .container__header {
         display: none;
     }
+    .card-avatar__description {
+        display: none;
+    }
+    .music-host-img.radio-mobile {
+        border: 2px solid var(--white-color)
+    }
+    .card-avatar__img-live.radio-mobile {
+        display: block;
+        bottom: 5px;
+    }
     .radio-mobile {
         margin-top: 32px;
     }

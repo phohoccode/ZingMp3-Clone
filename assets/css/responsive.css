@@ -151,12 +151,20 @@
     .hide-on-mobile {
         display: none;
     }
+    .c-4 {
+        min-width: 33.33333%;
+        flex-shrink: 0;
+    }
     .c-3-6 {
         min-width: 30.303030%;
         flex-shrink: 0;
     }
     .c-5-5 {
         min-width: 45.66667%;
+        flex-shrink: 0;
+    }
+    .c-6 {
+        min-width: 50%;
         flex-shrink: 0;
     }
     .c-9-8 {
