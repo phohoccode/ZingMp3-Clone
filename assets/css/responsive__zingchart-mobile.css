@@ -13,10 +13,10 @@
     .container__zingchart-list {
         display: none;
     }
-    .see-all-btn {
+    .container__weekly-rankings {
         display: none;
     }
-    .container__weekly-rankings {
+    .see-all-btn.pc {
         display: none;
     }
     .zing-chart-header {

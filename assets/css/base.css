@@ -13,7 +13,8 @@
     --black-color: #000;
     --red-color: red;
     --search-history-color: #34224f;
-    --border-primary-color: hsla(0,0%,100%,0.1);
+    --bg-color: rgba(255, 255, 255, 0.1);
+    --border-primary-color: rgba(255, 255, 255, 0.1);
     --width-aside-pc: 240px;
     --width-aside-table-mobile: 70px;
     --height-aside-table-mobile: 70px;
@@ -68,18 +69,38 @@ html {
     width: 20%;
 }
 
-::-webkit-scrollbar {
+.sidebar-list:last-child::-webkit-scrollbar,
+.nav__search-history::-webkit-scrollbar,
+.container__menu-account::-webkit-scrollbar {
     width: 4px;
     height: 0;
 }
 
-::-webkit-scrollbar-track {
-    background: var(--main-content-color); 
+.sidebar-list:last-child::-webkit-scrollbar-track,
+.nav__search-history::-webkit-scrollbar-track,
+.container__menu-account::-webkit-scrollbar-track {
+    background: transparent;
 }
  
-::-webkit-scrollbar-thumb {
+.sidebar-list:last-child::-webkit-scrollbar-thumb,
+.nav__search-history::-webkit-scrollbar-thumb,
+.container__menu-account::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: var(--scroll-thumb-bg); 
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--main-content-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--scroll-thumb-bg);
 }
 
 
@@ -198,7 +219,6 @@ input[type=radio]:checked::before {
 .switch:checked::after {
     left: 9px;
 }
-
 
 .item__live {
     position: absolute;
@@ -341,7 +361,7 @@ input[type=radio]:checked::before {
 .music-option-icon-heart:hover,
 .music-option-icon-ellipsis:hover,
 .music-option-icon-microphone:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--bg-color);
 }
 
 .music-option-icon-heart--active {
@@ -389,7 +409,7 @@ input[type=radio]:checked::before {
     background-color: #363333;
     display: none;
     animation: fadeIn ease 0.5s;
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2px var(--bg-color);
 }
 
 .text-hover::before {
