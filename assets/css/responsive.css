@@ -1,3 +1,7 @@
+@media (max-width: 1349) {
+
+}
+
 @media (max-width: 1024px) {
     .m-2-4 {
         min-width: 20%;
@@ -77,6 +81,7 @@
     .container__card-banner-list:hover .link__arrow-banner {
         display: none;
     }
+    .container__card-banner-list,
     .card-avatar__list,
     .container__music-list,
     .container__charts-list,
@@ -86,6 +91,13 @@
         flex-wrap: nowrap;
         scroll-snap-type: x mandatory;
         scroll-snap-stop: always;
+    }
+    .container__card-link,
+    .card-avatar__item,
+    .container__music-list-col,
+    .container__charts-item,
+    .topic__col {
+        scroll-snap-align: start;
     }
     .link__arrow-charts {
         display: none;
@@ -236,7 +248,6 @@
     .container__charts-item,
     .topic__col {
         padding: 0 8px;
-        scroll-snap-align: start;
     }
     .container__charts-item {
         margin-bottom: 10px;

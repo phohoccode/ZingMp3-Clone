@@ -96,7 +96,7 @@
     display: none;
 }
 
-.zingchart-item__left.mymusic i {
+.zingchart-item__left.mymusic > i {
     font-size: 1.36rem;
     color: hsla(0,0%,100%,0.5);
     margin-right: 12px;
