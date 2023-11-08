@@ -60,7 +60,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     border-radius: 12px;
     background-color: var(--white-color);
     margin-bottom: 12px;
@@ -77,13 +77,13 @@
 }
 
 .preferential-icon.waveform {
-    color:rgb(76, 151, 209);
-    background-color: rgb(183, 240, 240);
+    color: #62D3F1;
+    background-color: #CBF1FC;
 }
 
 .preferential-icon.repeat {
-    color: rgb(233, 47, 152);
-    background-color: rgba(246, 195, 232, 0.749);
+    color: #F472BC;
+    background-color: #FCDBEE;
 }
 
 
@@ -125,20 +125,33 @@
 .preferential-item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     margin: 0 8px;
 }
 
-.preferential-item > i {
+.preferential-item.hover:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 4px #ccc;
+}
+
+.preferential-item.center {
+    align-items: center;
+}
+
+.package__header > i {
     font-size: 3rem;
-    color: #8E4CFF;
+    color: #666666;
     margin-bottom: 12px;
 }
 
 .preferential-description {
     font-size: 1.5rem;
     color: #747474;
+    text-align: start;
+}
+
+.preferential-description.center {
     text-align: center;
 }
 
@@ -165,6 +178,8 @@
 }
 
 .user-section-item > i {
+    width: 21px;
+    height: 21px;
     margin-right: 12px;
 }
 

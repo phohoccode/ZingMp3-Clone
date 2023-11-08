@@ -7,6 +7,7 @@
     --main-content-color: #170f23;
     --primary-color: #9b4de0;
     --primary-bg: #34224f;
+    --bg-zingchart-mobile: #281D3B;
     --link-text-hover: #c273ed;
     --player-bg: #130c1c;
     --white-color: #fff;
@@ -48,6 +49,11 @@ html {
         opacity: 0;
     }
 }
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
 
 .l-4 {
     width: 33.33333%;
@@ -523,7 +529,7 @@ input[type=radio]:checked::before {
 }
 
 .title-text {
-    font-size: 4.4rem;
+    font-size: 4rem;
     margin-right: 12px;
     letter-spacing: 0.1rem;
     user-select: none;
@@ -535,7 +541,7 @@ input[type=radio]:checked::before {
     border: none;
     background-color: transparent;
     color: var(--white-color);
-    font-size: 4rem;
+    font-size: 3.6em;
     cursor: pointer;
 }
 

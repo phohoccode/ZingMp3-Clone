@@ -138,19 +138,19 @@
     margin-bottom: 24px;
 }
 .option__mymusic-link.mobile > .heart {
-    color: rgb(73, 196, 227);
+    color: rgb(77, 204, 254)
 }
 .option__mymusic-link.mobile > .down {
-    color: rgb(163, 19, 185);
+    color: #AC4CF4;
 }
 .option__mymusic-link.mobile > .user {
-    color: rgb(197, 121, 46);
+    color: #FE9736;
 }
 .option__mymusic-link.mobile > .upload {
-    color: rgb(235, 97, 38);
+    color: #FE7161;
 }
 .option__mymusic-link.mobile > .mv {
-    color: rgb(73, 196, 227);
+    color: #5D89FF;
 }
 .option__mymusic-name.mobile {
     font-size: 1.6rem;
