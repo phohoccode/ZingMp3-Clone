@@ -200,7 +200,7 @@
 }
 
 .logo__img-pc {
-    width: 80%;
+    width: 70%;
     height: 70px;
     padding: 12px 26px;
 }
@@ -410,9 +410,9 @@
 
 .nav__icon-search {
     position: absolute;
-    top: 18%;
-    left: 2%;
-    font-size: 2.4rem;
+    top: 21%;
+    left: 2.5%;
+    font-size: 2rem;
     color: var(--white-color);
 }
 
@@ -1634,7 +1634,7 @@
 
 .play-control__center-top-item.play {
     padding: 0;
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 .play-control__center-top-item.play:hover {
