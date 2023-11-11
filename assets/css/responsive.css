@@ -3,6 +3,10 @@
         min-width: 16.66667%;
         flex-shrink: 0;
     }
+    .l-2-4 {
+        min-width: 20%;
+        flex-shrink: 0;
+    }
     .l-3 {
         min-width: 25%;
         flex-shrink: 0;
@@ -18,21 +22,32 @@
     .hide-on-pc {
         display: none;
     }
+    .sidebar-list:last-child {
+        max-height: 100%;
+    }
+    .link__arrow-banner.left {
+        right: 75%;
+    }
+    .link__arrow-banner.right {
+        left: 75%;
+    }
     .container__option-list.weekly-rankings {
         left: 94%;
     }
     .container__option-list.zing-chart {
         left: 91%;
     }
-    .music-option-icon-heart, 
-    .music-option-icon-ellipsis {
-        font-size: 2.4rem;
-    }
 }
 
 @media (max-width: 1175px) {
     .volume-bar {
         display: none;
+    }
+    .sidebar-list:last-child {
+        max-height: 200px;
+    }
+    .item__separate {
+        margin: 0 10px;
     }
 }
 
@@ -54,9 +69,6 @@
     }
     .item__name {
         display: none;
-    }
-    .sidebar-list:last-child {
-        max-height: 250px;
     }
     .sidebar-item:hover .sidebar-item__play {
         display: none;
@@ -108,47 +120,9 @@
     .hide-on-table-mobile {
         display: none;
     }
-    /* .sidebar-pc {
-        background-color: var( --sidebar-table-mobile);
-        width: var(--width-aside-table-mobile);
-    }   
-    .logo {
-        justify-content: center;
-        width: var(--width-aside-table-mobile);
-        height: var(--height-aside-table-mobile);
-    }
-    .logo__img-pc {
-        display: none;
-    }
-    .logo__img-table-mobile {
-        display: block;
-    }
-    .item__name {
-        display: none;
-    } */
     .sidebar-list:last-child {
-        /* overflow: unset;
-        height: var(--height-sidebar); */
         max-height: 200px;
     }
-    /* .sidebar-item:hover .sidebar-item__play {
-        display: none;
-    }
-    .sidebar-item--active {
-        border: none;
-    }
-    .sidebar-item--active svg {
-        margin-left: 0;
-    }
-    .sidebar-divide {
-        margin: 12px 0;
-    }
-    .vip-banner-sidebar {
-        display: none;
-    }
-    .container-sidebar-add-list {
-        display: none;
-    } */
     .nav__search-history {
         max-height: 50vh;
     }
@@ -175,15 +149,14 @@
         font-size: 3rem;
         margin: 0 6px;
     }
-    .text-hover.ellipsis-hover {
-        top: -100%;
+    /* .text-hover.ellipsis-hover {
+        top: -55%;
         right: -10px;
     }
     .text-hover.heart-hover {
-        top: -100%;
-        right: 29px;
-
-    }
+        top: -55%;
+        right: 76px;
+    } */
     .container__card-banner-list,
     .card-avatar__list,
     .container__music-list,
