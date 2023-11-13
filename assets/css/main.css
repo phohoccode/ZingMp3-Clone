@@ -218,6 +218,7 @@
 .sidebar-list:last-child {
     overflow: hidden auto;
     max-height: 290px;
+    -webkit-mask-image: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.8) 10%,#fff 25%,#fff);
 }
 
 .sidebar-item {
@@ -271,8 +272,9 @@
 .vip-banner-sidebar__btn {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    white-space: nowrap;
     border-radius: 20px;
     color: #32323d;
     background-color: #ffdb00;
@@ -1153,8 +1155,10 @@
 }
 
 .header__btn-show-all {
-    border: none;
-    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
     color: hsla(0,0%,100%,0.5);
     background-color: transparent;
     cursor: pointer;
@@ -1553,6 +1557,7 @@
     background-color: var(--player-bg);
     z-index: 999;
     padding: 0 20px;
+    border-top: 1px solid hsla(0,0%,100%,0.1);
 }
 
 .play-control__left {

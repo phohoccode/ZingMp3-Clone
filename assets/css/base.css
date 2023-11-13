@@ -75,6 +75,20 @@ html {
     width: 20%;
 }
 
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--main-content-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--scroll-thumb-bg);
+}
+
 .sidebar-list:last-child::-webkit-scrollbar,
 .nav__search-history::-webkit-scrollbar,
 .container__menu-account::-webkit-scrollbar {
@@ -95,20 +109,6 @@ html {
     background: var(--scroll-thumb-bg); 
 }
 
-*::-webkit-scrollbar {
-    width: 4px;
-    height: 0;
-}
-
-*::-webkit-scrollbar-track {
-    background: var(--main-content-color);
-}
-
-*::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: var(--scroll-thumb-bg);
-}
-
 
 /* input range */
 input[type="range"] {
@@ -118,7 +118,6 @@ input[type="range"] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 
 input[type="range"]:hover {
     height: 5px;
