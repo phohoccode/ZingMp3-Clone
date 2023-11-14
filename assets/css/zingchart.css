@@ -23,6 +23,7 @@
     padding: 10px;
     user-select: none;
     border-bottom: 1px solid hsla(0,0%,100%,0.05);
+    transition: background-color 0.1s ease;
 }
 
 .container__zingchart-item:hover {
@@ -252,7 +253,6 @@
     left: 85%;
 }
 
-
 /* weekly-ranking mobile */
 .weekly-ranking-mobile {
     border-radius: 16px;
@@ -274,6 +274,7 @@
     z-index: 2;
     overflow: hidden;
     user-select: none;
+    transition: transform ease 0.2s;
 }
 
 .weekly-ranking__item-mobile:hover {

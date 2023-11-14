@@ -117,7 +117,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-snap-stop: always;
-    margin: 32px -8px 32px -8px;
+    margin: 70px -8px 32px -8px;
 }
 
 .option__mymusic-item.mobile {
@@ -131,7 +131,13 @@
     text-decoration: none;
     border-radius: 8px;
     background-color: var(--white-color);
+    transition: transform 0.2s;
 }
+
+.option__mymusic-link.mobile:hover {
+    transform: scale(0.95);
+}
+
 .option__mymusic-link.mobile > i {
     font-size: 3rem;
     color: var(--black-color);

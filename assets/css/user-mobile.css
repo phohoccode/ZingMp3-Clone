@@ -1,6 +1,6 @@
 .user__account.user-mobile {
     padding: 0;
-    margin-top: 20px;
+    margin-top: 70px ;
 }
 
 .account__info.user-mobile figure {
@@ -128,11 +128,11 @@
     align-items: start;
     flex-direction: column;
     margin: 0 8px;
+    transition: transform 0.2s;
 }
 
 .preferential-item.hover:hover {
     transform: scale(0.95);
-    box-shadow: 0 0 4px #ccc;
 }
 
 .preferential-item.center {
@@ -181,6 +181,74 @@
     width: 21px;
     height: 21px;
     margin-right: 12px;
+}
+
+.option-mobile__item.setting:hover .container-setting-mobile {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container-setting-mobile {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: 79vh;
+    background-color: var(--main-content-color);
+    overflow-y: auto;
+    z-index: 1;
+    opacity: 0;
+    transition: transform 1s ease, opacity 0.3s ease;
+    transform: translateY(100%);
+}
+
+.setting-mobile-title {
+    font-size: 2rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 12px 0 0 16px;
+}
+
+.setting-mobile-title > i {
+    border-radius: 50%;
+}
+
+.setting-mobile-title > i:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.setting-mobile-list {
+    list-style: none;
+}
+
+.setting-mobile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    font-size: 2rem;
+    height: 50px;
+}
+
+.setting-mobile-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.setting-mobile-item__left > i,
+.setting-mobile-title > i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    font-size: 2.4rem;
+    margin-right: 12px;
+}
+
+.setting-mobile-item__left > span {
+    font-size: 1.8rem;
 }
 
 
