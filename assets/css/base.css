@@ -225,6 +225,40 @@ input[type=radio]:checked::before {
     left: 9px;
 }
 
+/* switch mobile */
+.switch-mobile {
+    position: relative;
+    appearance: none;
+    width: 28px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: #BCBEBD;
+    cursor: pointer;
+}
+
+.switch-mobile::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.5px;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #ECECEC;
+}
+
+.switch-mobile:checked {
+    background-color: #dac6fa;
+}
+
+.switch-mobile:checked::after {
+    background-color: #8246E6;
+    left: 10px;
+}
+
+
+
 .item__live {
     position: absolute;
     right: 110px;

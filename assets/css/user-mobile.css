@@ -41,6 +41,14 @@
     padding: 0 8px;
 }
 
+.container__package.mobile {
+    transition: transform 0.2s ease;
+}
+
+.container__package.mobile:hover {
+    transform: scale(0.95);
+}
+
 .container__package.bg1 {
     background: url(/Zing-mp3-clone/assets/img/user-account/bg-1.png) 50%/cover no-repeat;
 }
@@ -78,12 +86,12 @@
 
 .preferential-icon.waveform {
     color: #62D3F1;
-    background-color: #CBF1FC;
+    background-color: rgba(202, 241, 252,0.1);
 }
 
 .preferential-icon.repeat {
     color: #F472BC;
-    background-color: #FCDBEE;
+    background-color: rgba(252, 219, 239, 0.1);
 }
 
 
@@ -128,7 +136,7 @@
     align-items: start;
     flex-direction: column;
     margin: 0 8px;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .preferential-item.hover:hover {
@@ -183,40 +191,34 @@
     margin-right: 12px;
 }
 
+/* setting */
 .option-mobile__item.setting:hover .container-setting-mobile {
     opacity: 1;
     transform: translateY(0);
 }
 
-.container-setting-mobile {
+.container-setting-mobile,
+.container-bell-mobile {
     display: block;
     position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
-    max-height: 79vh;
+    max-height: calc(100% - 170px);
     background-color: var(--main-content-color);
     overflow-y: auto;
-    z-index: 1;
+    z-index: 999;
     opacity: 0;
-    transition: transform 1s ease, opacity 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.3s ease;
     transform: translateY(100%);
 }
 
-.setting-mobile-title {
+.mobile-title {
     font-size: 2rem;
     height: 40px;
     display: flex;
     align-items: center;
     margin: 12px 0 0 16px;
-}
-
-.setting-mobile-title > i {
-    border-radius: 50%;
-}
-
-.setting-mobile-title > i:hover {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .setting-mobile-list {
@@ -236,19 +238,135 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.setting-mobile-item__left {
+    display: flex;
+    align-items: center;
+}
+
 .setting-mobile-item__left > i,
-.setting-mobile-title > i {
+.mobile-title > i {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
     width: 25px;
     height: 25px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-right: 12px;
 }
 
-.setting-mobile-item__left > span {
+.setting-mobile-item__left > span,
+.setting-mobile-item__right > i {
     font-size: 1.8rem;
 }
 
+
+.version {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+/* natification */
+.option-mobile__item.bell:hover .container-bell-mobile {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification-mobile-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    transition: background-color 0.2 ease;
+}
+
+.notification-mobile-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.notification-mobile-item > figure {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.notification__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+}
+
+.notification__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.notification__title > h3 {
+    font-size: 1.6rem;
+}
+
+.dots {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #ccc;
+}
+
+.notification__title > span {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.notification__desciption {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.notification__image {
+    width: 100%;
+    height: 100%;
+}
+
+/* search */
+.option-mobile__item.search:hover .container-search-mobile {
+    opacity: 1;
+    transform: translate(0,-50%);
+}
+
+.container-search-mobile {
+    position: absolute;
+    top: 50%;
+    left: -400%;
+    transform: translate(150%,-50%);
+    max-width: 200px;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.search-mobile__input {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 30px;
+    position: relative;
+    font-size: 1.8rem;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.search-mobile__input:focus {
+   outline: auto;
+}
+
+.search-mobile__input + a {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    color: var(--main-content-color);
+    font-size: 2rem;
+}
 
