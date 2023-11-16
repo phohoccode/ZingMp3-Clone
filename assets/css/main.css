@@ -74,6 +74,7 @@
 .title-mobile {
     font-size: 3rem;
     white-space: nowrap;
+    user-select: none;
 }
 
 .option-mobile {
@@ -107,7 +108,7 @@
 /* zingchart mobile */
 .zing-chart-mobile {
     display: none;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: var(--bg-zingchart-mobile);
     padding: 16px;
     margin: 12px 0 24px 0;
@@ -772,6 +773,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    user-select: none;
 }
 
 .account__info figure {
@@ -835,6 +837,7 @@
     padding: 16px 20px;
     border-radius: 12px;
     margin-bottom: 12px;
+    user-select: none;
 }
 
 .container__package:last-child{
