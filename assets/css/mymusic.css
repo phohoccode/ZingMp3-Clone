@@ -234,13 +234,13 @@
     font-size: 1.6rem;
 }
 
-/* mymusic create mobile */
-.mymusic__create:hover .mymusic-create-mobile {
+/* crate playlist */
+.mymusic__create:hover .child-function.create-playlist {
     opacity: 1;
     transform: translateY(0);
 }
 
-.mymusic-create-mobile {
+/* .mymusic-create-mobile {
     display: block;
     position: fixed;
     top: 50px;
@@ -254,7 +254,7 @@
     transition: transform 0.5s ease, opacity 0.3s ease;
     transform: translateY(100%);
     padding: 0 16px;
-}
+} */
 
 .mymusic-create-mobile__header {
     height: 50px;

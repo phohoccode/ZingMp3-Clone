@@ -198,7 +198,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
     .container__nav,
     .container__page-home {
         padding: 0 var(--padding-page-table-mobile);

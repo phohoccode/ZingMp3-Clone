@@ -240,7 +240,7 @@ input[type=radio]:checked::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: -1.5px;
+    left: -3px;
     transform: translateY(-50%);
     width: 21px;
     height: 21px;
@@ -640,6 +640,22 @@ input[type=file] {
 
 .upload-btn:hover {
     filter: brightness(0.9) ;
+}
+
+/* chức năng con */
+.child-function {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: calc(100% - 170px);
+    background-color: var(--main-content-color);
+    overflow-y: auto;
+    z-index: 999;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    transform: translateY(100%);
 }
 
 

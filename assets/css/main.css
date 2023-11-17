@@ -838,6 +838,7 @@
     border-radius: 12px;
     margin-bottom: 12px;
     user-select: none;
+    min-height: 255px;
 }
 
 .container__package:last-child{

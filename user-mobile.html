@@ -44,7 +44,7 @@
                     <div class="option-mobile">
                         <button class="option-mobile__item setting">
                             <i class="fa-light fa-gear"></i>
-                            <div class="container-setting-mobile">
+                            <div class="child-function setting">
                                 <h2 class="mobile-title">
                                     <i class="fa-light fa-arrow-left"></i>
                                     Thiết lập
@@ -172,7 +172,7 @@
                         </button>
                         <button class="option-mobile__item bell">
                             <i class="fa-light fa-bell"></i>
-                            <div class="container-bell-mobile">
+                            <div class="child-function bell">
                                 <h2 class="mobile-title">
                                     <i class="fa-light fa-arrow-left"></i>
                                     Hôm nay nghe gì
@@ -410,11 +410,11 @@
                                 <p class="account__name user-mobile">Quốc Việt</p>
                                 <div class="package-option">
                                     <div class="package-type user-mobile">BASIC</div>
-                                    <span class="package-update">
+                                    <span class="package-update-text">
                                         Nâng cấp gói
                                         <i class="fa-light fa-chevron-right"></i>
                                     </span>
-                                    <div class="container-pakage-update">
+                                    <div class="child-function package-update" style="padding: 0 16px;">
                                         <div class="exit">
                                             <i class="fa-light fa-xmark"></i>
                                         </div>
@@ -423,20 +423,22 @@
                                             <a href="#" class="container-pakage-update__label">Gói của tôi</a>
                                             <a href="#" class="container-pakage-update__label container-pakage-update__label--active">Mua gói</a>
                                         </div>
-                                        <div class="container__package mobile bg1" style="margin-bottom: 16px;">
-                                            <div class="package__header user-mobile">
-                                                <div class="package__header-left">
-                                                    <span class="package__header-name user-mobile">Zing MP3</span>
-                                                    <div class="package-type plus user-mobile" style="font-size: 1.2rem;">PLUS</div>
+                                        <div class="package-row">
+                                            <div class="container__package mobile bg1" style="margin-bottom: 16px;">
+                                                <div class="package__header user-mobile">
+                                                    <div class="package__header-left">
+                                                        <span class="package__header-name user-mobile">Zing MP3</span>
+                                                        <div class="package-type plus user-mobile" style="font-size: 1.2rem;">PLUS</div>
+                                                    </div>
                                                 </div>
+                                                <h3 class="package__title user-mobile">19,000đ</h3>
+                                                <ul class="preferential-description__list">
+                                                    <li class="preferential-description__item">Nghe nhạc không quảng cáo</li>
+                                                    <li class="preferential-description__item">Nghe và tải nhạc chất lượng Lossless</li>
+                                                    <li class="preferential-description__item">Nghe nhạc nâng cao (Crossfade, Gapless)</li>
+                                                </ul>
+                                                <a href="" class="package-view__btn plus">Xem gói</a>
                                             </div>
-                                            <h3 class="package__title user-mobile">19,000đ</h3>
-                                            <ul class="preferential-description__list">
-                                                <li class="preferential-description__item">Nghe nhạc không quảng cáo</li>
-                                                <li class="preferential-description__item">Nghe và tải nhạc chất lượng Lossless</li>
-                                                <li class="preferential-description__item">Nghe nhạc nâng cao (Crossfade, Gapless)</li>
-                                            </ul>
-                                            <a href="" class="package-view__btn plus">Xem gói</a>
                                         </div>
                                         <div class="container__package mobile bg2">
                                             <div class="package__header user-mobile">
@@ -491,6 +493,98 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="child-function child-package plus" style="padding: 0 16px;">
+                                    <div class="child-package__header">
+                                        <i class="fa-light fa-arrow-left"></i>
+                                        <a href="" class="child-packge__option plus child-packge__option--active" style="margin-right: 48px;">Plus</a>
+                                        <a href="" class="child-packge__option premium">Premium</a>
+                                    </div>
+                                    <div class="child-package__title">
+                                        <div class="package__header user-mobile" style="align-items: center; justify-content: start;">
+                                            <span class="package__header-name user-mobile" style="font-size: 4rem;">Zing MP3</span>
+                                            <div class="package-type plus user-mobile" style="font-size: 2rem;">PLUS</div>
+                                        </div>
+                                        <p class="package__description user-mobile" style="text-align: center; color: #ccc; font-size: 1.6rem; margin-top: 8px;">Nghe nhạc với chất lượng cao nhất, không quản cáo</p>
+                                    </div>
+                                    <div class="child-package__list">
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link child-package__link--active plus">
+                                                <span class="child-package__time child-package__time--active plus">1 Tháng</span>
+                                                <h3 class="package__title user-mobile">19,000đ</h3>
+                                                <span class="package__title-old">29,000đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link">
+                                                <span class="child-package__time">6 Tháng</span>
+                                                <h3 class="package__title user-mobile">99,000đ</h3>
+                                                <span class="package__title-old">174,000đ</span>
+                                                <div class="child-package__node plus">TIẾT KIỆM 45%</div>
+                                            </div>
+                                        </div>
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link">
+                                                <span class="child-package__time">12 Tháng</span>
+                                                <h3 class="package__title user-mobile">169,000đ</h3>
+                                                <span class="package__title-old">348,000đ</span>
+                                                <div class="child-package__node plus">TIẾT KIỆM 50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="child-package__monopoly">
+                                        <h3 class="child-package__monopoly-title">Đặc quyền Plus</h3>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon plus" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-rectangle-ad"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Nghe nhạc không quảng cáo</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon plus" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-waveform-lines"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Nghe và tải nhạc Lossless</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon plus" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-circle-arrow-down"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Lưu trữ nhạc không giới hạn</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon plus" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-sliders-up"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Tính năng nghe nhạc nâng cao</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon plus" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-cloud-arrow-up"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Mở khóa tính năng Upload</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                    </ul>
+                                    <p class="child-package__description">
+                                        Phí dịch vụ sẽ được thanh toán qua tài khoản iTunes/CH Play khi xác nhận đăng ký dịch vụ. Thuê bao dịch vụ sẽ tự động gia hạn trừ khi chế độ tự động gia hạn bị tắt tối thiểu 24 giờ trước khi thời hạn sử dụng dịch vụ chấm dứt. Người dùng có thể tắt chế độ tự động gia hạn bất kỳ lúc nào.
+                                        <a href="#">Liên hệ hỗ trợ</a>
+                                    </p>
+                                    <a href="#" class="package-view__btn plus" style="margin-bottom: 16px;">NHẬN NGAY ƯU ĐÃI</a>
+                                </div>
                             </div>
                             <div class="package-item c-9-8">
                                 <div class="container__package mobile bg2">
@@ -506,7 +600,7 @@
                                     <div class="preferential-list">
                                         <div class="preferential-item center">
                                             <div class="preferential-icon premium">
-                                                <i class="fa-light fa-music"></i>
+                                                <i class="fa-light fa-gem"></i>
                                             </div>
                                             <p class="preferential-description center">Kho nhạc Premium</p>
                                         </div>
@@ -523,6 +617,115 @@
                                             <p class="preferential-description center">Nghe và tải nhạc Lossless</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="child-function child-package premium" style="padding: 0 16px;">
+                                    <div class="child-package__header">
+                                        <i class="fa-light fa-arrow-left"></i>
+                                        <a href="" class="child-packge__option plus" style="margin-right: 48px;">Plus</a>
+                                        <a href="" class="child-packge__option premium child-packge__option--active">Premium</a>
+                                    </div>
+                                    <div class="child-package__title">
+                                        <div class="package__header user-mobile" style="align-items: center; justify-content: start;">
+                                            <span class="package__header-name premium user-mobile " style="font-size: 4rem;">Zing MP3</span>
+                                            <div class="package-type premium user-mobile" style="font-size: 2rem;">PREMIUM</div>
+                                        </div>
+                                        <p class="package__description user-mobile" style="text-align: center; color: #ccc; font-size: 1.6rem; margin-top: 8px;">Toàn bộ đặc quyền Plus cùng kho nhạc Premium</p>
+                                    </div>
+                                    <div class="child-package__list">
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link child-package__link--active premium">
+                                                <span class="child-package__time child-package__time--active premium">1 Tháng</span>
+                                                <h3 class="package__title user-mobile">49,000đ</h3>
+                                                <span class="package__title-old">59,000đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link">
+                                                <span class="child-package__time">6 Tháng</span>
+                                                <h3 class="package__title user-mobile">279,000đ</h3>
+                                                <span class="package__title-old">354,000đ</span>
+                                                <div class="child-package__node premium">TIẾT KIỆM 20%</div>
+                                            </div>
+                                        </div>
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link">
+                                                <span class="child-package__time">12 Tháng</span>
+                                                <h3 class="package__title user-mobile">499,000đ</h3>
+                                                <span class="package__title-old">708,000đ</span>
+                                                <div class="child-package__node premium">TIẾT KIỆM 30%</div>
+                                            </div>
+                                        </div>
+                                        <div class="chil-package__col c-5-5">
+                                            <div class="child-package__link">
+                                                <span class="child-package__time">1 Tháng Family</span>
+                                                <h3 class="package__title user-mobile">89,000đ</h3>
+                                                <span class="package__title-old">534,000đ</span>
+                                                <div class="child-package__node premium">SIÊU TIẾT KIỆM</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="child-package__monopoly">
+                                        <h3 class="child-package__monopoly-title">Đặc quyền Premium</h3>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon premium" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-gem"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Kho nhạc premium</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon premium" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-rectangle-ad"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Nghe nhạc không quảng cáo</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon premium" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-waveform-lines"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Nghe và tải nhạc Lossless</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon premium" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-circle-arrow-down"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Lưu trữ nhạc không giới hạn</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon premium" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-sliders-up"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Tính năng nghe nhạc nâng cao</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                        <li class="child-package__monopoly-item">
+                                            <div class="child-package__monopoly-item__left">
+                                                <div class="preferential-icon premium" style="margin: 0 12px 0 0;">
+                                                    <i class="fa-light fa-cloud-arrow-up"></i>
+                                                </div>
+                                                <p class="preferential-description" style="font-size: 1.8rem; color: var(--while-color);">Mở khóa tính năng Upload</p>
+                                            </div>
+                                            <i class="fa-light fa-chevron-right"></i>
+                                        </li>
+                                    </ul>
+                                    <p class="child-package__description">
+                                        Phí dịch vụ sẽ được thanh toán qua tài khoản iTunes/CH Play khi xác nhận đăng ký dịch vụ. Thuê bao dịch vụ sẽ tự động gia hạn trừ khi chế độ tự động gia hạn bị tắt tối thiểu 24 giờ trước khi thời hạn sử dụng dịch vụ chấm dứt. Người dùng có thể tắt chế độ tự động gia hạn bất kỳ lúc nào.
+                                        <a href="#">Liên hệ hỗ trợ</a>
+                                    </p>
+                                    <a href="#" class="package-view__btn premium" style="margin-bottom: 16px;">MUA GÓI</a>
                                 </div>
                             </div>
                         </div>
