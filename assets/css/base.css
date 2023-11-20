@@ -229,7 +229,7 @@ input[type=radio]:checked::before {
 .switch-mobile {
     position: relative;
     appearance: none;
-    width: 28px;
+    width: 32px;
     height: 16px;
     border-radius: 20px;
     background-color: #BCBEBD;
@@ -240,7 +240,7 @@ input[type=radio]:checked::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: -3px;
+    left: 0;
     transform: translateY(-50%);
     width: 21px;
     height: 21px;
@@ -254,10 +254,8 @@ input[type=radio]:checked::before {
 
 .switch-mobile:checked::after {
     background-color: #8246E6;
-    left: 10px;
+    left: 13px;
 }
-
-
 
 .item__live {
     position: absolute;
@@ -657,6 +655,5 @@ input[type=file] {
     transition: transform 0.5s ease, opacity 0.3s ease;
     transform: translateY(100%);
 }
-
 
 
