@@ -605,11 +605,11 @@ input[type=radio]:checked::before {
 }
 
 .bg-empty.album {
-    background-image: url('/Zing-mp3-clone/assets/img/empty__logo.png');
+    background-image: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/empty-album-dark.png');
 }
 
 .bg-empty.upload {
-    background-image: url('/Zing-mp3-clone/assets/img/empty-upload-dark.png');
+    background-image: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/empty-upload-dark.png');
 }
 
 .text__empty {

@@ -51,11 +51,11 @@
 }
 
 .container__package.bg1 {
-    background: url(/Zing-mp3-clone/assets/img/user-account/bg-1.png) 50%/cover no-repeat;
+    background: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.101/static/media/subscription-package-plus.33ae1d19.png') 50%/cover no-repeat;
 }
 
 .container__package.bg2 {
-    background: url(/Zing-mp3-clone/assets/img/user-account/bg-2.png) 50%/cover no-repeat;  
+    background: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.101/static/media/subscription-package-premium.73768ec4.png') 50%/cover no-repeat;  
 }
 
 .package__header.user-mobile {
