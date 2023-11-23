@@ -48,7 +48,7 @@
         display: none;
     }
     .sidebar-list:last-child {
-        max-height: 200px;
+        max-height: 100%;
     }
     .item__separate {
         margin: 0 10px;
@@ -124,9 +124,6 @@
     .hide-on-table-mobile {
         display: none;
     }
-    .sidebar-list:last-child {
-        max-height: 200px;
-    }
     .nav__search-history {
         max-height: 50vh;
     }
@@ -142,16 +139,6 @@
     }
     .container__card-banner-list:hover .link__arrow-banner {
         display: none;
-    }
-    .music-option-icon-heart,
-    .music-option-icon-ellipsis,
-    .music-option-icon-microphone {
-        font-size: 1.5rem;
-        padding: 4px 5px;
-    }
-    .container__option-list.banner .music-option-icon-play {
-        font-size: 3rem;
-        margin: 0 6px;
     }
     .container__card-banner-list,
     .card-avatar__list,
@@ -171,26 +158,23 @@
     .topic__col {
         scroll-snap-align: start;
     }
-    .link__arrow-charts {
+    .card-content:hover .container__music-option,
+    .music-option__more:hover .text-hover,
+    .container__zingchart-item:hover .container__music-option, 
+    .link__arrow-charts,
+    .link__arrow-radio,
+    .volume-bar {    
         display: none;
+    }
+    .container__zingchart-item:hover .zingchart-item__right {
+        display: flex;
     }
     .item__separate {
         margin: 0 10px;
     }
-    .volume-bar {
-        display: none;
-    }
-
-    /* zing chart */
-    .container__option-list.weekly-rankings {
-        left: 93%;
-    }
     /* radio */
     .container__page-home.radio {
         height: 100vh;
-    }
-    .link__arrow-radio.radio {
-        top: 30%;
     }
     /* my music */
     .container__page-home.mymusic {
@@ -210,25 +194,9 @@
         left: 4%;
         font-size: 2.2rem;
     }
-    .music-option-icon-heart,
-    .music-option-icon-ellipsis,
-    .music-option-icon-microphone {
-        font-size: 1.5rem;
-        padding: 4px 5px;
+    .search-suggestion__content-list:hover .container__music-option {
+        display: none;
     }
-    .container__option-list.banner .music-option-icon-play {
-        font-size: 3rem;
-        margin: 0 6px;
-    }
-    .text-hover.ellipsis-hover {
-        top: -100%;
-        right: -10px;
-    }
-    .text-hover.heart-hover {
-        top: -100%;
-        right: 29px;
-    }
-
 } 
 
 @media (max-width: 739px) {
